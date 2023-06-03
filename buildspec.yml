@@ -5,7 +5,7 @@ phases:
   install:
     runtime-version:
       - sudo apt update
-      - java:corretto11
+      - apt install default-jre
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
