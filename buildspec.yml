@@ -3,9 +3,9 @@ version: 0.2
 
 phases:
   install:
-    runtime-version:
+    commands:
       - sudo apt update
-      - apt install default-jre
+      - apt install openjdk-11-jre-headless
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
