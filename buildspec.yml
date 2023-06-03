@@ -4,7 +4,8 @@ version: 0.2
 phases:
   install:
     runtime-version:
-      java:corretto11
+      - sudo apt update
+      - java:corretto11
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
