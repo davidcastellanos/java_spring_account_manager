@@ -5,7 +5,8 @@ phases:
   install:
     commands:
       - sudo apt update
-      - apt install openjdk-11-jre-headless
+      - sudo apt install openjdk-11-jdk -y
+      - sudo apt install maven -y
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
